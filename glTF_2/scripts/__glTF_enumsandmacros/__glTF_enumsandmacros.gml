@@ -1,0 +1,1 @@
+#macro GLTF_MODEL_DIR "glTF_Sample_Models/"
