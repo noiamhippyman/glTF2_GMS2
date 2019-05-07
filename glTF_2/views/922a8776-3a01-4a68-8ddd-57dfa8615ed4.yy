@@ -5,7 +5,6 @@
     "name": "922a8776-3a01-4a68-8ddd-57dfa8615ed4",
     "children": [
         "114643e6-8bd8-4203-9b92-e7f6703a343b",
-        "a280fdb2-ab63-4336-815a-036178d30296",
         "3876601e-c5ec-4fbd-8f24-399d3e473639"
     ],
     "filterType": "GMIncludedFile",
