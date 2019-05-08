@@ -7,19 +7,13 @@ if (!file_exists(filename)) {
 	// return ERROR_FILE_NOT_FOUND
 }
 
-var jsonString = __glTF_get_json_string(filename);
-var jsonData = json_decode(jsonString);
-
-var buffers = __glTF_load_buffers(jsonData,filename);
-
-var images = [];
-//var imageCount = ds_list_size(jsonImages);
-//for (var i = 0; i < imageCount; ++i) {
-//	images[i] = jsonImages[|i];
-//}
-
-var gltf = [];
-gltf[eGLTF.JSON] = jsonData;
-gltf[eGLTF.Buffers] = buffers;
-gltf[eGLTF.Images] = images;
-return gltf;
+var is_glb = filename_ext(filename) == ".glb";
+var gltf_asset;
+if (is_glb) {
+	// loading glTF asset from glb file
+	gltf_asset = __glTF_load_glb(filename);
+} else {
+	// loading glTF asset from gltf file
+	gltf_asset = __glTF_load_gltf(filename);
+}
+return gltf_asset;
