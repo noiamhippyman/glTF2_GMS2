@@ -1,4 +1,8 @@
 #macro GLTF_MODEL_DIR "glTF_Sample_Models/"
+// If you cloned this then you don't have any models.
+// Just google "gltf sample models" only 2.0 is supported
+// Put those in their own group in the included files
+// Either make the group name the same as above or change GLTF_MODEL_DIR to appropriate path
 
 /*
 #macro GLTF_COMPONENT_TYPE_BYTE		5120
